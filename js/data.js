@@ -81,7 +81,7 @@ const portfolioData = {
                 "Bootstrap"
             ],
             github: "https://github.com/alinabatool-dev/AZURE-RESORT",
-            liveDemo: "https://alinabatool-dev.github.io/AZURE-RESORT/"
+            liveDemo: "https://azureresort-theta.vercel.app/"
         },
 
         {
@@ -107,7 +107,7 @@ const portfolioData = {
                 "Bootstrap"
             ],
             github: "https://github.com/alinabatool-dev/NovaTech",
-            liveDemo: "https://alinabatool-dev.github.io/NovaTech/"
+            liveDemo: "https://nova-tech-liard.vercel.app/"
         },
 
         {
@@ -133,7 +133,7 @@ const portfolioData = {
                 "Bootstrap"
             ],
             github: "https://github.com/alinabatool-dev/CreativeTechnology",
-            liveDemo: "https://alinabatool-dev.github.io/CreativeTechnology/"
+            liveDemo: "https://creative-technology.vercel.app/"
         }
     ]
 };
