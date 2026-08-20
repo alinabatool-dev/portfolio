@@ -108,9 +108,21 @@ experienceCard.innerHTML = `
         experienceContainer.appendChild(experienceCard);
     });
 }
+// CAREER GOALS
+function loadCareerGoals() {
+
+    const careerGoalsContainer =
+        document.getElementById("careerGoalsContainer");
+
+    if (!careerGoalsContainer) return;
+
+    careerGoalsContainer.textContent =
+        portfolioData.personalInfo.careerGoals;
+}
 
 // LOAD ABOUT DATA
 document.addEventListener("DOMContentLoaded", function () {
     loadEducation();
     loadExperience();
+    loadCareerGoals();
 });

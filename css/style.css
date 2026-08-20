@@ -1059,3 +1059,63 @@ section {
     font-size: 0.85rem;
     margin-bottom: 12px;
 }
+
+
+
+
+
+
+
+/* ================= CAREER GOALS ================= */
+
+.career-goals {
+    margin-top: 30px;
+    padding: 25px 28px;
+    border-left: 4px solid var(--primary-color);
+    background: var(--light-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.career-goals-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.career-goals-heading i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.career-goals-heading span {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    margin-bottom: 3px;
+}
+
+.career-goals-heading h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.career-goals p {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 15px;
+    color: var(--text-color);
+}

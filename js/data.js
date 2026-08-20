@@ -6,6 +6,7 @@ const portfolioData = {
             "I’m a passionate Frontend Web Developer focused on creating responsive, user-friendly and visually engaging websites using modern web technologies.",
         location: "Karachi, Pakistan",
         email: "batoolalina070@gmail.com",
+        careerGoals: "My career goal is to become a skilled and creative Frontend Web Developer who builds modern, responsive, and user-friendly websites. I aim to continuously improve my technical skills, gain practical experience through real-world projects, and explore modern web technologies to create engaging digital experiences.",
         github: "https://github.com/alinabatool-dev",
         linkedin: "https://www.linkedin.com/in/alina-batool070"
     },

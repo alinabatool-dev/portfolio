@@ -470,3 +470,31 @@
         font-size: 24px;
     }
 }
+
+/* Career Goals Responsive */
+@media (max-width: 768px) {
+
+    .career-goals {
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .career-goals-heading {
+        gap: 12px;
+    }
+
+    .career-goals-heading i {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .career-goals-heading h4 {
+        font-size: 18px;
+    }
+
+    .career-goals p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
