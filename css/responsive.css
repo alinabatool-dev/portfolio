@@ -1,45 +1,29 @@
-/* =====================================================
-   RESPONSIVE CSS - PORTFOLIO
-   ===================================================== */
-
 /* ================= LARGE TABLET / SMALL LAPTOP ================= */
-
 @media (max-width: 1199px) {
-
     .hero-content h1 {
         font-size: clamp(2.8rem, 6vw, 4.2rem);
     }
-
     .hero-image-box {
         width: 380px;
         height: 380px;
     }
-
     .hero-image-circle {
         width: 310px;
         height: 310px;
     }
-
     .about-content {
         padding-left: 15px;
     }
-
     .project-image {
         height: 420px;
     }
 }
-
-
 /* ================= TABLET ================= */
-
 @media (max-width: 991px) {
-
     /* ---------- NAVBAR ---------- */
-
     .navbar {
         padding: 13px 0;
     }
-
     .navbar-collapse {
         margin-top: 15px;
         padding: 15px;
@@ -47,63 +31,47 @@
         border-radius: 10px;
         box-shadow: var(--shadow);
     }
-
     .navbar-nav {
         gap: 0;
     }
-
     .nav-link {
         padding: 10px 12px !important;
     }
-
     .nav-link::after {
         display: none;
     }
-
     .nav-btn {
         display: inline-block;
         margin-top: 5px;
     }
-
-
     /* ---------- HERO ---------- */
-
     .hero-section {
         min-height: auto;
         padding: 130px 0 80px;
     }
-
     .hero-content {
         text-align: center;
         margin-bottom: 50px;
     }
-
     .hero-description {
         margin-left: auto;
         margin-right: auto;
     }
-
     .hero-buttons {
         justify-content: center;
     }
-
     .hero-socials {
         justify-content: center;
     }
-
     .hero-image-box {
         width: 360px;
         height: 360px;
     }
-
     .hero-image-circle {
         width: 300px;
         height: 300px;
     }
-
-
     /* ---------- ABOUT ---------- */
-
     .about-section,
     .skills-section,
     .projects-section,
@@ -113,130 +81,93 @@
     .contact-section {
         padding: 80px 0;
     }
-
     .about-image-box {
         width: 340px;
         height: 390px;
         margin-bottom: 40px;
     }
-
     .about-content {
         padding-left: 0;
         text-align: center;
     }
-
     .about-info {
         text-align: left;
     }
-
-
     /* ---------- PROJECTS ---------- */
-
     .project-image {
         height: 400px;
     }
-
-
     /* ---------- CONTACT ---------- */
-
     .contact-info {
         padding-right: 0;
         margin-bottom: 30px;
     }
-
     .contact-form-box {
         padding: 30px;
     }
-
-
     /* ---------- FOOTER ---------- */
-
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-
     .footer-socials {
         justify-content: center;
     }
 }
-
-
 /* ================= MOBILE ================= */
-
 @media (max-width: 767px) {
-
     /* ---------- GENERAL ---------- */
-
     .section-heading {
         margin-bottom: 40px;
         padding: 0 15px;
     }
-
     .section-subtitle {
         font-size: 0.75rem;
         letter-spacing: 1.5px;
     }
-
     .section-heading h2 {
         font-size: 2rem;
     }
-
     .section-heading > p:last-child {
         font-size: 0.85rem;
     }
-
-
     /* ---------- NAVBAR ---------- */
-
     .navbar {
         padding: 12px 0;
     }
-
     .navbar-brand {
         font-size: 1.05rem;
     }
-
     .navbar-toggler {
         font-size: 1.2rem;
     }
-
     .navbar-collapse {
         max-height: calc(100vh - 80px);
         overflow-y: auto;
     }
-
-
     /* ---------- HERO ---------- */
-
     .hero-section {
         padding: 115px 15px 70px;
     }
-
     .hero-content {
         margin-bottom: 35px;
     }
-
     .hero-greeting {
         font-size: 0.9rem;
     }
-
     .hero-content h1 {
         font-size: clamp(2.4rem, 12vw, 3.5rem);
         letter-spacing: -1px;
         word-break: normal;
     }
-
     .hero-content h2 {
         font-size: 1.3rem;
         line-height: 1.4;
     }
-
     .hero-description {
         font-size: 0.88rem;
         line-height: 1.8;
     }
-
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
@@ -245,34 +176,26 @@
         margin-left: auto;
         margin-right: auto;
     }
-
     .hero-buttons .btn {
         width: 100%;
     }
-
     .hero-socials {
         gap: 9px;
     }
-
     .hero-socials a {
         width: 38px;
         height: 38px;
     }
-
-
     /* ---------- HERO IMAGE ---------- */
-
     .hero-image-box {
         width: min(85vw, 330px);
         height: min(85vw, 330px);
     }
-
     .hero-image-circle {
         width: min(72vw, 270px);
         height: min(72vw, 270px);
         padding: 7px;
     }
-
     .decoration-one {
         width: 55px;
         height: 55px;
@@ -280,17 +203,13 @@
         top: 15px;
         right: 5px;
     }
-
     .decoration-two {
         width: 35px;
         height: 35px;
         bottom: 15px;
         left: 5px;
     }
-
-
     /* ---------- ABOUT ---------- */
-
     .about-section,
     .skills-section,
     .projects-section,
@@ -300,201 +219,140 @@
     .contact-section {
         padding: 70px 0;
     }
-
     .about-image-box {
         width: min(90vw, 330px);
         height: 380px;
         margin-bottom: 35px;
     }
-
     .about-content {
         text-align: center;
     }
-
     .about-content h3 {
         font-size: 1.5rem;
     }
-
     .about-content p {
         font-size: 0.88rem;
     }
-
-
     /* ---------- ABOUT INFO ---------- */
-
     .about-info {
         grid-template-columns: 1fr;
         gap: 12px;
         text-align: left;
     }
-
     .info-item {
         padding: 13px;
     }
-
     .info-item strong {
         font-size: 0.78rem;
         overflow-wrap: anywhere;
     }
-
-
     /* ---------- SKILLS ---------- */
-
     .skill-card {
         padding: 24px 20px;
     }
-
-
     /* ---------- PROJECTS ---------- */
-
-    /* .project-image {
-        height: 350px;
-    } */
      .project-image {
         height: auto;
         overflow: visible;
     }
-
     .project-image img {
         width: 100%;
         height: auto;
         object-fit:contain;
     }
-
     .project-content {
         padding: 20px;
     }
-
     .project-content h3 {
         font-size: 1.15rem;
     }
-
     .project-content p {
         font-size: 0.84rem;
     }
-
-
     /* ---------- PROJECT MODAL ---------- */
-
     .modal-dialog {
         margin: 10px;
     }
-
     .modal-header {
         padding: 15px 18px;
     }
-
     .modal-body {
         padding: 18px;
     }
-
     .modal-project-image {
         height: 220px;
     }
-
     .modal-project-links {
         flex-wrap: wrap;
     }
-
     .modal-project-links a {
         flex: 1 1 auto;
         text-align: center;
     }
-
-
     /* ---------- EDUCATION ---------- */
-
     .education-card {
         padding: 22px 20px 22px 55px;
     }
-
     .education-card::before {
         left: 20px;
         top: 24px;
     }
-
     .education-card h3 {
         font-size: 1.05rem;
     }
-
-
     /* ---------- EXPERIENCE ---------- */
-
     .experience-card {
         padding: 25px 18px;
     }
-
-
     /* ---------- CERTIFICATES ---------- */
-
     .certificate-card {
         padding: 28px 20px;
     }
-
     .certificate-content h3 {
         font-size: 18px;
     }
-
-
     /* ---------- CONTACT ---------- */
-
     .contact-info {
         padding-right: 0;
         margin-bottom: 25px;
     }
-
     .contact-info h3 {
         font-size: 1.5rem;
     }
-
     .contact-info > p {
         font-size: 0.85rem;
     }
-
     .contact-item {
         gap: 10px;
     }
-
     .contact-item a,
     .contact-item p {
         font-size: 0.78rem;
         overflow-wrap: anywhere;
     }
-
     .contact-form-box {
         padding: 22px 18px;
     }
-
     .contact-form-box .form-control {
         font-size: 0.82rem;
     }
-
     .contact-form-box textarea {
         min-height: 140px;
     }
-
     .submit-btn {
         width: 100%;
     }
-
-
     /* ---------- FOOTER ---------- */
-
     .footer {
         padding: 35px 0 18px;
     }
-
     .footer-content {
         gap: 18px;
     }
-
     .footer-bottom p {
         font-size: 0.7rem;
     }
-
-
     /* ---------- BACK TO TOP ---------- */
-
     .back-to-top {
         width: 40px;
         height: 40px;
@@ -502,134 +360,113 @@
         bottom: 15px;
     }
 }
-
-
 /* ================= SMALL MOBILE ================= */
-
 @media (max-width: 480px) {
-
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
-
     /* Hero */
-
     .hero-section {
         padding-top: 105px;
     }
-
     .hero-content h1 {
         font-size: 2.3rem;
     }
-
     .hero-content h2 {
         font-size: 1.15rem;
     }
-
     .hero-description {
         font-size: 0.83rem;
     }
-
     .hero-image-box {
         width: 290px;
         height: 290px;
     }
-
     .hero-image-circle {
         width: 235px;
         height: 235px;
     }
-
-
     /* About */
-
     .about-image-box {
         width: 280px;
         height: 330px;
     }
-
     .about-content h3 {
         font-size: 1.35rem;
     }
-
-
     /* Projects */
      .project-image {
         height: auto;
     }
-
     .project-image img {
         height: auto;
         width: 100%;
         object-fit: contain;
     }
-
-
     /* Contact */
-
     .contact-form-box {
         padding: 18px 14px;
     }
-
     .contact-item {
         align-items: flex-start;
     }
-
-
     /* Certificate */
-
     .certificate-icon {
         width: 60px;
         height: 60px;
         font-size: 24px;
     }
-
-
     /* Footer */
-
     .footer-content h3 {
         font-size: 1.05rem;
     }
 }
-
-
 /* ================= EXTRA SMALL DEVICES ================= */
-
 @media (max-width: 360px) {
-
     .navbar-brand {
         font-size: 0.95rem;
     }
-
     .hero-content h1 {
         font-size: 2rem;
     }
-
     .hero-content h2 {
         font-size: 1.05rem;
     }
-
     .hero-image-box {
         width: 260px;
         height: 260px;
     }
-
     .hero-image-circle {
         width: 210px;
         height: 210px;
     }
-
     .about-image-box {
         width: 250px;
         height: 300px;
     }
-
     .section-heading h2 {
         font-size: 1.75rem;
     }
-
     .project-image {
         height: 240px;
+    }
+}
+/*=========== MODAL RESPONSIVE ============*/
+@media (max-width: 576px) {
+    .success-modal-content {
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+    .success-modal-content h3 {
+        font-size: 1.3rem;
+    }
+    .success-modal-content p {
+        font-size: 0.82rem;
+    }
+    .success-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
     }
 }

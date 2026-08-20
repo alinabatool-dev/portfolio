@@ -199,12 +199,18 @@ function setupContactForm() {
             isValid = false;
         }
 // SUCCESS
-        if (isValid) {
-            alert(
-                "Thank you! Your message has been submitted successfully."
-            );
-            contactForm.reset();
-        }
+        // SUCCESS
+
+if (isValid) {
+
+    const successModal = document.getElementById("successModal");
+
+    if (successModal) {
+        successModal.classList.add("show");
+    }
+
+    contactForm.reset();
+}
     });
 }
 // SHOW ERROR
@@ -364,4 +370,28 @@ if (certificateModal) {
 
     });
 
+}
+// ============= SUCCESS MODAL =============
+const successModal = document.getElementById("successModal");
+const closeModal = document.getElementById("closeModal");
+const modalOk = document.getElementById("modalOk");
+
+if (successModal && closeModal && modalOk) {
+
+    // Close with X
+    closeModal.addEventListener("click", function () {
+        successModal.classList.remove("show");
+    });
+
+    // Close with OK
+    modalOk.addEventListener("click", function () {
+        successModal.classList.remove("show");
+    });
+
+    // Close when clicking outside popup
+    successModal.addEventListener("click", function (event) {
+        if (event.target === successModal) {
+            successModal.classList.remove("show");
+        }
+    });
 }
