@@ -56,7 +56,15 @@ const portfolioData = {
         
     ],
 
-    experience: [],
+    experience: [
+    {
+        title: "Frontend Web Development Learning Experience",
+        company: "Self-Learning & Academic Projects",
+        duration: "2026 - Present",
+        description:
+            "Developing practical frontend web development skills through academic assignments, personal projects, and continuous learning. Working with HTML5, CSS3, Bootstrap, JavaScript, Git, and GitHub."
+    }
+],
 
     projects: [
         {

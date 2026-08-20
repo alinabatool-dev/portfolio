@@ -1048,3 +1048,14 @@ section {
     transform: translateY(-2px);
     opacity: 0.9;
 }
+.experience-company {
+    color: var(--primary);
+    font-weight: 600;
+    margin: 8px 0 4px;
+}
+
+.experience-duration {
+    color: #777;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}

@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //    LOAD ALL SECTIONS
     loadSkills();
     loadProjects();
-    loadEducation();
-    loadExperience();
 
     //    OTHER FUNCTIONS
     setupContactForm();
@@ -60,175 +58,7 @@ function getSkillIcon(skillName) {
     };
     return icons[skillName] || '<i class="fa-solid fa-code"></i>';
 }
-//    EDUCATION
-function loadEducation() {
-    const educationContainer =
-        document.getElementById("educationContainer");
-    if (!educationContainer) return;
-    educationContainer.innerHTML = "";
-    portfolioData.education.forEach(function (education) {
-        const educationCard =
-            document.createElement("div");
-        educationCard.className = "education-card mb-4";
-        educationCard.innerHTML = `
-            <h3>
-                ${education.degree}
-            </h3>
-            <div class="education-institute">
-                ${education.institute}
-            </div>
-            <div class="education-duration">
-                ${education.duration}
-            </div>
-            <p>
-                ${education.description}
-            </p>
-        `;
-        educationContainer.appendChild(educationCard);
-    });
-}
-//=============== EXPERIENCE===============
-function loadExperience() {
-    const experienceContainer =
-        document.getElementById("experienceContainer");
-    if (!experienceContainer) return;
-    experienceContainer.innerHTML = "";
-// NO EXPERIENCE
-    if (
-        !portfolioData.experience ||
-        portfolioData.experience.length === 0
-    ) {
-        experienceContainer.innerHTML = `
-            <div class="experience-card">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3>
-                    Currently Building Experience
-                </h3>
-                <p>
-                    I am currently developing my practical experience
-                    through academic assignments, personal projects
-                    and continuous learning in frontend web development.
-                </p>
-            </div>
-        `;
-        return;
-    }
-//    EXPERIENCE EXISTS
-    portfolioData.experience.forEach(function (experience) {
-        const experienceCard =
-            document.createElement("div");
-        experienceCard.className =
-            "experience-card mb-4";
-        experienceCard.innerHTML = `
-            <i class="fa-solid fa-briefcase"></i>
-            <h3>
-                ${experience.title}
-            </h3>
-            <p>
-                ${experience.description}
-            </p>
-        `;
-        experienceContainer.appendChild(experienceCard);
-    });
-}
-// =============CONTACT FORM VALIDATION=============
-function setupContactForm() {
-    const contactForm =
-        document.getElementById("contactForm");
-    if (!contactForm) return;
-    contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        let isValid = true;
-//    GET VALUES
-        const name =
-            document.getElementById("name").value.trim();
-        const email =
-            document.getElementById("email").value.trim();
-        const subject =
-            document.getElementById("subject").value.trim();
-        const message =
-            document.getElementById("message").value.trim();
-// CLEAR ERRORS
-        clearErrors();
-//    NAME VALIDATION
-        if (name === "") {
-            showError(
-                "nameError",
-                "Please enter your name."
-            );
-            isValid = false;
-        }
-//    EMAIL VALIDATION
-        const emailRegex =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (email === "") {
-            showError(
-                "emailError",
-                "Please enter your email."
-            );
-            isValid = false;
-        }
-        else if (!emailRegex.test(email)) {
-            showError(
-                "emailError",
-                "Please enter a valid email."
-            );
-            isValid = false;
-        }
-// SUBJECT VALIDATION
-        if (subject === "") {
-            showError(
-                "subjectError",
-                "Please enter a subject."
-            );
-            isValid = false;
-        }
-    // MESSAGE VALIDATION
-        if (message === "") {
-            showError(
-                "messageError",
-                "Please enter your message."
-            );
-            isValid = false;
-        }
-        else if (message.length < 10) {
-            showError(
-                "messageError",
-                "Message must contain at least 10 characters."
-            );
-            isValid = false;
-        }
-// SUCCESS
-        // SUCCESS
 
-if (isValid) {
-
-    const successModal = document.getElementById("successModal");
-
-    if (successModal) {
-        successModal.classList.add("show");
-    }
-
-    contactForm.reset();
-}
-    });
-}
-// SHOW ERROR
-function showError(elementId, message) {
-    const errorElement =
-        document.getElementById(elementId);
-    if (errorElement) {
-        errorElement.textContent = message;
-    }
-}
-//  CLEAR ERRORS
-function clearErrors() {
-    const errorMessages =
-        document.querySelectorAll(".error-message");
-    errorMessages.forEach(function (element) {
-        element.textContent = "";
-    });
-}
 // ===========BACK TO TOP=========
 function setupBackToTop() {
     const backToTop =
@@ -362,36 +192,8 @@ if (certificateModal) {
 
         const modalTitle =
             document.getElementById("certificateModalLabel");
-
         modalImage.src = certificateImage;
         modalImage.alt = certificateTitle;
-
         modalTitle.textContent = certificateTitle;
-
-    });
-
-}
-// ============= SUCCESS MODAL =============
-const successModal = document.getElementById("successModal");
-const closeModal = document.getElementById("closeModal");
-const modalOk = document.getElementById("modalOk");
-
-if (successModal && closeModal && modalOk) {
-
-    // Close with X
-    closeModal.addEventListener("click", function () {
-        successModal.classList.remove("show");
-    });
-
-    // Close with OK
-    modalOk.addEventListener("click", function () {
-        successModal.classList.remove("show");
-    });
-
-    // Close when clicking outside popup
-    successModal.addEventListener("click", function (event) {
-        if (event.target === successModal) {
-            successModal.classList.remove("show");
-        }
     });
 }
